@@ -7,17 +7,17 @@ public class Main {
         String UserName;// username
         String PassWord;// password
 
-        System.out.print("Register Username: ");
+        System.out.print("Register Username: ");// Register Username
         String user = Input.nextLine();
-        System.out.print("Register Password: ");
+        System.out.print("Register Password: ");// Register Password
         String pass = Input.nextLine();
 
-        System.out.println("Username:" + user + " " + "Password:" + pass + "\n");
+        System.out.println("Username:" + user + " " + "Password:" + pass + "\n");// Show the registered info
 
-        System.out.print("Enter Username: ");
+        System.out.print("Enter Username: ");// ask to Enter Username
         UserName = Input.nextLine();
         if(UserName.equals(user)){
-            System.out.print("Enter Password: ");
+            System.out.print("Enter Password: ");// ask to Enter Password
             PassWord = Input.nextLine();
 
             if(PassWord.equals(pass)){
