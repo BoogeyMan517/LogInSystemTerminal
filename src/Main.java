@@ -6,11 +6,15 @@ public class Main {
 
         String UserName;// username
         String PassWord;// password
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
 
         System.out.print("Register Username: ");// Register Username
         String user = Input.nextLine();
         System.out.print("Register Password: ");// Register Password
         String pass = Input.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
 
         System.out.println("Username:" + user + " " + "Password:" + pass + "\n");// Show the registered info
 
@@ -21,6 +25,8 @@ public class Main {
             PassWord = Input.nextLine();
 
             if(PassWord.equals(pass)){
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
                 System.out.println("Welcome!!!");
             }
 
@@ -29,6 +35,8 @@ public class Main {
                     System.out.print("Try Again: ");
                     PassWord = Input.nextLine();
                 }while (!PassWord.equals(pass));
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
                 System.out.println("Welcome!!!");
             }
         }
@@ -43,6 +51,8 @@ public class Main {
             PassWord = Input.nextLine();
 
             if(PassWord.equals(pass)){
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
                 System.out.println("Welcome!!!");
             }
 
@@ -51,6 +61,8 @@ public class Main {
                     System.out.print("Try Again: ");
                     PassWord = Input.nextLine();
                 }while (!PassWord.equals(pass));
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
                 System.out.println("Welcome!!!");
             }
         }
